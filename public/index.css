@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  background: linear-gradient(to left, #9afccd, #e79afc);
+}
+
+.CalContainer {
+  margin: 0 auto;
+  width: 500px;
+  top: 20px;
+}
+
+.CalScreen {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 6px;
+  border-radius: 30px;
+}
+
+.firstInput,
+.secondInput {
+  font-size: 30px;
+  color: white;
+  display: block;
+}
+
+.CalButtons {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 125px);
+  grid-template-rows: minmax(120px, auto) repeat(4, 80px);
+  bottom: 65px;
+}
+
+.CalButtons button {
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  display: block;
+}
+
+.CalButtons button:hover {
+  background-color: #ffc756;
+}
